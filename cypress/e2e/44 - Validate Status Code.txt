@@ -1,0 +1,3 @@
+Dalam setiap API Automation Test, Validate Status apakah penting?
+
+sangat penting, karena kita akan menguji API sudah sesuai dengan fungsinya atau belum
