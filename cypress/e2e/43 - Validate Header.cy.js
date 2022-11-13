@@ -4,6 +4,10 @@ describe('Headers', () => {
         cy.get('@pokemon').its('headers').its('content-type')
             .should('include', 'application/json; charset=utf-8')
             expect(response.headers).to.have.property('content-type', 'application/json; charset=utf-8')
+            expect(response.status).to.eq(200)
+            expect(response.body).to.not.be.null
+            expect(response.body).to.have.property('abilities')
+            expect(response.body).to.have.property('name', 'ditto')
     });
 })
 });
